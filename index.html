@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Vuejs demo</title>
+</head>
+<body>
+	<div id="demo">
+		<template v-for="post in posts">
+		<div class="post" v-bind:class="{'post-isread':isread, 'post-unread':unread}">
+			{{ post }}
+			&nbsp;<span>{{ message }}</span>
+		</div>
+		</template>
+	</div>
+</body>
+<script src="./js/vue.js"></script>
+<script src="./js/index.js"></script>
+</html>
